@@ -1,0 +1,130 @@
+body {
+  background-color: black;
+  color: white;
+  height: 95vh;
+  font-family: 'Press Start 2P';
+}
+
+.board-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  border-collapse: collapse;
+  /* table-layout: fixed; */
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+  box-sizing: border-box;
+}
+
+header, header img {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+header h1 {
+  font-size: 2.5em;
+  border: 4px solid gray;
+  width: fit-content;
+  padding: 0.2em;
+  margin: 0 auto;
+}
+
+header p {
+  font-size: 1.6em;
+}
+
+img {
+  height: 37px;
+}
+
+.gameover-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 1);
+  /* padding: 1em; */
+  display: none;
+}
+
+.gameover-modal button {
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 1em auto 0;
+  padding: 0.8em;
+  border-radius: 2em;
+  background-color: #00c;
+  color: white;
+  font-family: monospace;
+  transition: transform 0.2s;
+}
+
+.gameover-modal button:hover {
+  transform: scale(1.06);
+}
+
+/* Walls */
+
+.wall-horizontal {
+  border-top: 3px blue solid;
+  border-bottom: 3px blue solid;
+}
+
+.wall-vertical {
+  border-left: 3px blue solid;
+  border-right: 3px blue solid;
+}
+
+.wall-tr-corner {
+  border-top: 3px blue solid;
+  border-right: 3px blue solid;
+}
+
+.wall-tl-corner {
+  border-top: 3px blue solid;
+  border-left: 3px blue solid;
+}
+
+.wall-br-corner {
+  border-bottom: 3px blue solid;
+  border-right: 3px blue solid;
+}
+
+.wall-bl-corner {
+  border-bottom: 3px blue solid;
+  border-left: 3px blue solid;
+}
+
+.wall-n {
+  border-left: 3px blue solid;
+  border-top: 3px blue solid;
+  border-right: 3px blue solid;
+}
+
+.wall-u {
+  border-left: 3px blue solid;
+  border-bottom: 3px blue solid;
+  border-right: 3px blue solid;
+}
+
+.wall-c {
+  border-top: 3px blue solid;
+  border-left: 3px blue solid;
+  border-bottom: 3px blue solid;
+}
+
+.wall-reveresed-c {
+  border-top: 3px blue solid;
+  border-right: 3px blue solid;
+  border-bottom: 3px blue solid;
+}
